@@ -1,0 +1,131 @@
+\documentclass[lualatex,ja=standard]{bxjsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0.6em, topsep=0.5em}
+\pagestyle{empty}
+
+\begin{document}
+
+\noindent\textbf{数IA 計算演習（少し難しめ） 解答}
+\hrule
+\vspace{0.8em}
+
+\begin{enumerate}
+\item
+\[
+(2x-3)^2-(x+1)(x-5)
+=4x^2-12x+9-(x^2-4x-5)
+=3x^2-8x+14
+\]
+
+\item 分母を払うと
+\[
+(x+2)^2-(2x-1)(x-1)=3
+\]
+\[
+x^2+4x+4-(2x^2-3x+1)=3
+\]
+\[
+-x^2+7x+3=3
+\Rightarrow -x^2+7x=0
+\Rightarrow x(x-7)=0
+\]
+\[
+x=0,\ 7
+\]
+ただし $x\neq 1,-2$ より、どちらも適する。
+
+\item
+\[
+3x^2-2x-1=(3x+1)(x-1)=0
+\]
+\[
+x=1,\ -\frac13
+\]
+
+\item 重解条件より判別式 $D=0$。
+\[
+(-4a)^2-4\cdot 1\cdot(4a+5)=0
+\]
+\[
+16a^2-16a-20=0
+\Rightarrow 4a^2-4a-5=0
+\]
+\[
+a=\frac{4\pm\sqrt{16+80}}{8}=\frac{4\pm 4\sqrt6}{8}=\frac{1\pm\sqrt6}{2}
+\]
+
+\item
+\[
+y=x^2-6x+11=(x-3)^2+2
+\]
+頂点は $x=3$（区間内）なので最小値は $2$。
+端点を確認すると
+\[
+y(1)=6,\quad y(5)=6
+\]
+よって最大値は $6$（$x=1,5$）。
+
+\item 第2象限なので $\sin\theta>0$。
+\[
+\sin\theta=\sqrt{1-\cos^2\theta}=\sqrt{1-\frac{25}{169}}=\frac{12}{13}
+\]
+\[
+\tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{12/13}{-5/13}=-\frac{12}{5}
+\]
+
+\item 余弦定理より
+\[
+BC^2=AB^2+AC^2-2\cdot AB\cdot AC\cos A
+\]
+\[
+=7^2+5^2-2\cdot 7\cdot 5\cdot\cos120^\circ
+=49+25-70\left(-\frac12\right)
+=109
+\]
+\[
+BC=\sqrt{109}
+\]
+
+\item
+\[
+{}_8P_3=8\cdot 7\cdot 6=336,\quad {}_8C_3=\frac{8\cdot 7\cdot 6}{3\cdot 2\cdot 1}=56
+\]
+\[
+{}_8P_3-{}_8C_3=336-56=280
+\]
+
+\item 全体は
+\[
+\binom{9}{3}=84
+\]
+青玉を含まない（赤4個・白3個のみから3個）場合は
+\[
+\binom{7}{3}=35
+\]
+したがって求める通り数は
+\[
+84-35=49
+\]
+
+\item 全事象は $36$ 通り。
+和が9以上は
+\[
+(3,6),(4,5),(5,4),(6,3),
+(4,6),(5,5),(6,4),
+(5,6),(6,5),
+(6,6)
+\]
+の10通り。
+このうち積が奇数なのは両方奇数のときのみで、該当は
+\[
+(5,5)
+\]
+の1通り。
+よって条件を満たすのは $10-1=9$ 通り。
+\[
+\frac{9}{36}=\frac14
+\]
+\end{enumerate}
+
+\end{document}
