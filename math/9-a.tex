@@ -1,0 +1,157 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+{\LARGE 数I・A 共通テスト本番レベル（図形のみ）解答}
+\end{center}
+
+\vspace{1em}
+
+\section*{第1問}
+\begin{enumerate}[label=\arabic*.]
+  \item 余弦定理より
+  \[
+  BC^2=7^2+9^2-2\cdot7\cdot9\cos120^\circ
+  =49+81+63=193.
+  \]
+  よって
+  \[
+  BC=\sqrt{193}.
+  \]
+  \item 面積
+  \[
+  S=\frac12\cdot7\cdot9\sin120^\circ
+  =\frac{63}{2}\cdot\frac{\sqrt3}{2}
+  =\frac{63\sqrt3}{4}.
+  \]
+  \item 中線の長さ公式
+  \[
+  AM=\frac12\sqrt{2AB^2+2AC^2-BC^2}
+  =\frac12\sqrt{2\cdot49+2\cdot81-193}
+  =\frac{\sqrt{67}}{2}.
+  \]
+  \item 正弦定理 \( \dfrac{BC}{\sin A}=2R \) より
+  \[
+  R=\frac{BC}{2\sin120^\circ}
+  =\frac{\sqrt{193}}{\sqrt3}
+  =\frac{\sqrt{579}}{3}.
+  \]
+\end{enumerate}
+
+\section*{第2問}
+\begin{enumerate}[label=\arabic*.]
+  \item 弦の公式 \(AB=2R\sin\frac{\theta}{2}\)（\(\theta=\angle AOB\)）より
+  \[
+  8\sqrt2=16\sin\frac{\theta}{2}
+  \Rightarrow \sin\frac{\theta}{2}=\frac{\sqrt2}{2}.
+  \]
+  小さい方より
+  \[
+  \theta=90^\circ.
+  \]
+  \item 弧長
+  \[
+  \frac{90}{360}\cdot2\pi\cdot8=4\pi.
+  \]
+  \item 扇形面積
+  \[
+  \frac{90}{360}\cdot\pi\cdot8^2=16\pi.
+  \]
+  \item 弓形面積
+  \[
+  =\text{扇形}-\triangle AOB.
+  \]
+  \[
+  [\triangle AOB]=\frac12\cdot8\cdot8\sin90^\circ=32.
+  \]
+  よって
+  \[
+  16\pi-32.
+  \]
+\end{enumerate}
+
+\section*{第3問}
+\begin{enumerate}[label=\arabic*.]
+  \item 面積
+  \[
+  S=AB\cdot AD\sin60^\circ
+  =10\cdot6\cdot\frac{\sqrt3}{2}
+  =30\sqrt3.
+  \]
+  \item 三角形 \(ABD\) に余弦定理を用いて
+  \[
+  BD^2=10^2+6^2-2\cdot10\cdot6\cos60^\circ
+  =100+36-60=76.
+  \]
+  よって
+  \[
+  BD=2\sqrt{19}.
+  \]
+  \item 対角線は平行四辺形を等面積の4三角形に分けるので
+  \[
+  [\triangle AOD]=\frac14\cdot30\sqrt3=\frac{15\sqrt3}{2}.
+  \]
+  \item
+  \[
+  [\triangle ABD]=\frac12\cdot30\sqrt3=15\sqrt3.
+  \]
+  点 \(A\) から直線 \(BD\) への距離を \(d\) とすると
+  \[
+  15\sqrt3=\frac12\cdot(2\sqrt{19})\cdot d
+  \Rightarrow d=\frac{15\sqrt3}{\sqrt{19}}
+  =\frac{15\sqrt{57}}{19}.
+  \]
+\end{enumerate}
+
+\section*{第4問}
+座標を
+\[
+A(0,0,0),\ B(6,0,0),\ D(0,6,0),\ E(0,0,9),\ G(6,6,9)
+\]
+とおく。
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  AG=\sqrt{6^2+6^2+9^2}
+  =\sqrt{153}=3\sqrt{17}.
+  \]
+  \item \(AG\) の底面への正射影は \(AC\) で
+  \[
+  AC=\sqrt{6^2+6^2}=6\sqrt2.
+  \]
+  よって
+  \[
+  \tan\theta=\frac{9}{6\sqrt2}=\frac{3\sqrt2}{4}.
+  \]
+  \item
+  \[
+  [\triangle AEG]
+  =\frac12\cdot AE\cdot(\text{点 }G\text{ から直線 }AE\text{ への距離})
+  =\frac12\cdot9\cdot6\sqrt2
+  =27\sqrt2.
+  \]
+  \item
+  \[
+  \overrightarrow{BD}=(-6,6,0),\quad \overrightarrow{BG}=(0,6,9).
+  \]
+  法線ベクトルを
+  \[
+  \overrightarrow{n}=\overrightarrow{BD}\times\overrightarrow{BG}=(3,3,-2)
+  \]
+  （比例ベクトル）とすると、平面 \(BDG\) の方程式は
+  \[
+  3x+3y-2z-18=0.
+  \]
+  よって点 \(A\) からこの平面までの距離は
+  \[
+  \frac{|3\cdot0+3\cdot0-2\cdot0-18|}{\sqrt{3^2+3^2+(-2)^2}}
+  =\frac{18}{\sqrt{22}}
+  =\frac{9\sqrt{22}}{11}.
+  \]
+\end{enumerate}
+
+\end{document}

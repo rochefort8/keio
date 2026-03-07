@@ -1,0 +1,141 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+{\LARGE 数I・A 共通テスト本番レベル（解答）}
+\end{center}
+
+\vspace{1em}
+
+\section*{第1問}
+\[
+f(x)=(x-(a+1))^2+\{a^2-2a+5-(a+1)^2\}=(x-(a+1))^2+4(1-a)
+\]
+\begin{enumerate}[label=\arabic*.]
+  \item 最小値は
+  \[
+  4(1-a)\quad (x=a+1 \text{で達成}).
+  \]
+  \item \(f(x)\le0\) が実数解をもつための必要十分条件は最小値 \(\le0\)。
+  \[
+  4(1-a)\le0 \iff a\ge1.
+  \]
+  \item 判別式
+  \[
+  D=\{2(a+1)\}^2-4(a^2-2a+5)=16(a-1).
+  \]
+  異なる2実数解 \(\iff D>0 \iff a>1\)。  
+  さらに
+  \[
+  \alpha+\beta=2(a+1)>0,\quad \alpha\beta=a^2-2a+5=(a-1)^2+4>0
+  \]
+  より2解はともに正。したがって
+  \[
+  a>1.
+  \]
+  \item \(\alpha<2<\beta\) は \(f(2)<0\) と同値。
+  \[
+  f(2)=4-4(a+1)+a^2-2a+5=a^2-6a+5=(a-1)(a-5).
+  \]
+  よって
+  \[
+  (a-1)(a-5)<0 \iff 1<a<5.
+  \]
+\end{enumerate}
+
+\section*{第2問}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  \binom{10}{4}=210.
+  \]
+  \item 偶数5枚、奇数5枚。和が偶数 \(\iff\) 奇数枚数が0,2,4。
+  \[
+  \binom{5}{0}\binom{5}{4}+\binom{5}{2}\binom{5}{2}+\binom{5}{4}\binom{5}{0}
+  =5+100+5=110.
+  \]
+  よって
+  \[
+  \frac{110}{210}=\frac{11}{21}.
+  \]
+  \item 3の倍数は \(\{3,6,9\}\) の3枚、そうでないものは7枚。
+  \[
+  \binom{3}{1}\binom{7}{3}=3\cdot35=105.
+  \]
+  よって
+  \[
+  \frac{105}{210}=\frac12.
+  \]
+  \item 最小値を \(m\)、最大値を \(m+5\) とすると \(m=1,2,3,4,5\)。  
+  その間の4個から2個選ぶので各 \(m\) について
+  \[
+  \binom{4}{2}=6
+  \]
+  通り。したがって有利事象は
+  \[
+  5\cdot6=30.
+  \]
+  よって
+  \[
+  \frac{30}{210}=\frac17.
+  \]
+\end{enumerate}
+
+\section*{第3問}
+\begin{enumerate}[label=\arabic*.]
+  \item 余弦定理より
+  \[
+  BC^2=8^2+10^2-2\cdot8\cdot10\cos60^\circ=64+100-80=84.
+  \]
+  よって
+  \[
+  BC=2\sqrt{21}.
+  \]
+  \item 面積
+  \[
+  S=\frac12\cdot8\cdot10\sin60^\circ
+  =40\cdot\frac{\sqrt3}{2}=20\sqrt3.
+  \]
+  \item 正弦定理 \( \dfrac{BC}{\sin A}=2R \) より
+  \[
+  R=\frac{2\sqrt{21}}{2\sin60^\circ}
+  =\frac{2\sqrt{21}}{\sqrt3}=2\sqrt7.
+  \]
+  \item 高さを \(h\) とすると
+  \[
+  20\sqrt3=\frac12\cdot(2\sqrt{21})\cdot h
+  \]
+  だから
+  \[
+  h=\frac{20\sqrt3}{\sqrt{21}}=\frac{20}{\sqrt7}=\frac{20\sqrt7}{7}.
+  \]
+\end{enumerate}
+
+\section*{第4問}
+\begin{enumerate}[label=\arabic*.]
+  \item 60点以上の人数は \(14+8=22\) 人。したがって相対度数は
+  \[
+  \frac{22}{40}=0.55.
+  \]
+  \item 階級値は \(10,30,50,70,90\)。平均の近似値は
+  \[
+  \bar{x}\approx\frac{10\cdot2+30\cdot6+50\cdot10+70\cdot14+90\cdot8}{40}
+  =\frac{2400}{40}=60.
+  \]
+  \item
+  \[
+  H=50+10\frac{78-60}{18}=50+10=60.
+  \]
+  \item
+  \[
+  50+10\frac{x-60}{18}\ge65
+  \iff \frac{x-60}{18}\ge1.5
+  \iff x\ge87.
+  \]
+\end{enumerate}
+
+\end{document}

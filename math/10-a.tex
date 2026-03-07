@@ -1,0 +1,169 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+{\LARGE 数I・A 共通テスト本番レベル（図形）解答}
+\end{center}
+
+\vspace{1em}
+
+\section*{第1問（三角比・図形と計量）}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  \angle ATB=180^\circ-42^\circ-57^\circ=81^\circ.
+  \]
+  \item 正弦定理より
+  \[
+  \frac{AT}{\sin57^\circ}=\frac{80}{\sin81^\circ}
+  \]
+  なので
+  \[
+  AT=\frac{80\sin57^\circ}{\sin81^\circ}\approx67.9\text{ m}.
+  \]
+  \item
+  \[
+  PT=AT\tan28^\circ
+  =\frac{80\sin57^\circ}{\sin81^\circ}\tan28^\circ
+  \approx36.1\text{ m}.
+  \]
+  \item 仰角が $27^\circ$ のとき
+  \[
+  PT' = AT\tan27^\circ\approx34.6\text{ m}.
+  \]
+  よって変化量は
+  \[
+  PT'-PT=AT(\tan27^\circ-\tan28^\circ)\approx-1.5\text{ m}.
+  \]
+  したがって、塔の高さは約 $1.5\text{ m}$ 減少する。
+\end{enumerate}
+
+\section*{第2問（円）}
+\begin{enumerate}[label=\arabic*.]
+  \item 弦の公式 $AB=2R\sin\dfrac\theta2$（$\theta=\angle AOB$）より
+  \[
+  6\sqrt3=12\sin\frac\theta2
+  \Rightarrow \sin\frac\theta2=\frac{\sqrt3}{2}.
+  \]
+  小さい方より
+  \[
+  \theta=120^\circ.
+  \]
+  \item 弧長
+  \[
+  \frac{120}{360}\cdot2\pi\cdot6=4\pi.
+  \]
+  扇形面積
+  \[
+  \frac{120}{360}\cdot\pi\cdot6^2=12\pi.
+  \]
+  \item 接線と弦のなす角は、対応する円周角に等しい。したがって
+  \[
+  \angle PAB=\frac12\angle AOB=60^\circ.
+  \]
+  \item
+  \[
+  [\triangle PAB]=\frac12\cdot PA\cdot AB\cdot\sin\angle PAB
+  =\frac12\cdot6\cdot6\sqrt3\cdot\sin60^\circ=27.
+  \]
+  \item 余弦定理より
+  \[
+  PB^2=6^2+(6\sqrt3)^2-2\cdot6\cdot6\sqrt3\cdot\cos60^\circ
+  =144-36\sqrt3.
+  \]
+  よって
+  \[
+  PB=6\sqrt{4-\sqrt3}.
+  \]
+\end{enumerate}
+
+\section*{第3問（平面図形）}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  S=AB\cdot AD\sin60^\circ=8\cdot5\cdot\frac{\sqrt3}{2}=20\sqrt3.
+  \]
+  \item 三角形 $ABD$ に余弦定理を用いて
+  \[
+  BD^2=8^2+5^2-2\cdot8\cdot5\cos60^\circ=49.
+  \]
+  よって
+  \[
+  BD=7.
+  \]
+  \item 対角線で4等分されるので
+  \[
+  [\triangle AOD]=\frac14\cdot20\sqrt3=5\sqrt3.
+  \]
+  \item
+  \[
+  [\triangle ABD]=\frac12\cdot20\sqrt3=10\sqrt3.
+  \]
+  点 $A$ から直線 $BD$ への距離を $AH$ とすると
+  \[
+  10\sqrt3=\frac12\cdot7\cdot AH
+  \Rightarrow AH=\frac{20\sqrt3}{7}.
+  \]
+  \item 三角形 $ABD$ で余弦定理の形を用いると
+  \[
+  BH=\frac{AB^2+BD^2-AD^2}{2BD}=\frac{64+49-25}{14}=\frac{44}{7},
+  \]
+  \[
+  HD=\frac{AD^2+BD^2-AB^2}{2BD}=\frac{25+49-64}{14}=\frac{5}{7}.
+  \]
+  よって
+  \[
+  BH:HD=44:5.
+  \]
+\end{enumerate}
+
+\section*{第4問（空間図形）}
+座標を
+\[
+A(0,0,0),\ B(6,0,0),\ C(6,4,0),\ D(0,4,0),\ E(0,0,8),\ G(6,4,8)
+\]
+とする。
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  M=\left(6,4,4\right),\quad N=\left(0,0,2\right).
+  \]
+  \item
+  \[
+  \overrightarrow{BM}=(0,4,4),\quad \overrightarrow{BN}=(-6,0,2).
+  \]
+  法線ベクトルは
+  \[
+  \overrightarrow{BM}\times\overrightarrow{BN}=(8,-24,24)\propto(1,-3,3).
+  \]
+  よって平面方程式は
+  \[
+  (x-6)-3y+3z=0
+  \iff x-3y+3z-6=0.
+  \]
+  \item 点 $D(0,4,0)$ から平面までの距離は
+  \[
+  \frac{|0-3\cdot4+0-6|}{\sqrt{1^2+(-3)^2+3^2}}
+  =\frac{18}{\sqrt{19}}.
+  \]
+  \item 線分 $AG$ を
+  \[
+  (x,y,z)=(6t,4t,8t)\quad(0\le t\le1)
+  \]
+  とおく。平面式に代入すると
+  \[
+  6t-12t+24t-6=0
+  \Rightarrow 18t=6
+  \Rightarrow t=\frac13.
+  \]
+  よって
+  \[
+  AX:XG=\frac13:\frac23=1:2.
+  \]
+\end{enumerate}
+
+\end{document}

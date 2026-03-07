@@ -1,0 +1,169 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+{\LARGE 数I・A 共通テスト本番レベル（やや難）解答}
+\end{center}
+
+\vspace{1em}
+
+\section*{第1問}
+\[
+f(x)=x^2-2ax+a+2=(x-a)^2-a^2+a+2
+\]
+\begin{enumerate}[label=\arabic*.]
+  \item 最小値は
+  \[
+  -a^2+a+2.
+  \]
+  \item $f(x)\le0$ の解集合の長さは、判別式を $D$ とすると $\sqrt{D}$。
+  \[
+  D=(-2a)^2-4(a+2)=4(a^2-a-2).
+  \]
+  長さ $\ge2$ より
+  \[
+  \sqrt{D}\ge2 \iff D\ge4
+  \iff a^2-a-3\ge0.
+  \]
+  よって
+  \[
+  a\le\frac{1-\sqrt{13}}{2}\ \text{または}\ a\ge\frac{1+\sqrt{13}}{2}.
+  \]
+  \item $0<\alpha<1<\beta$ は $f(1)<0$ かつ2実根をもつことと同値。
+  \[
+  f(1)=1-2a+a+2=3-a<0 \iff a>3.
+  \]
+  また $a>3$ なら判別式は正で、
+  \[
+  \alpha\beta=a+2>0,\quad \alpha+\beta=2a>0
+  \]
+  より2根は正。
+  よって
+  \[
+  a>3.
+  \]
+  \item $a=4$ のとき
+  \[
+  f(x)=x^2-8x+6=(x-4)^2-10.
+  \]
+  
+  \[
+  |f(x)|\le3
+  \iff -3\le (x-4)^2-10\le3
+  \iff 7\le (x-4)^2\le13.
+  \]
+  よって
+  \[
+  x\in[4-\sqrt{13},\,4-\sqrt7]\cup[4+\sqrt7,\,4+\sqrt{13}].
+  \]
+\end{enumerate}
+
+\section*{第2問}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  \binom{12}{4}=495.
+  \]
+  \item 偶数6枚、奇数6枚より
+  \[
+  \frac{\binom62\binom62}{\binom{12}4}
+  =\frac{225}{495}=\frac{5}{11}.
+  \]
+  \item 条件「最大値が10」では、10を含み残り3枚を1～9から選ぶ。
+  \[
+  \text{条件事象}=\binom93=84.
+  \]
+  さらに最小値が3なら、3と10を含み、残り2枚を4～9から選ぶので
+  \[
+  \text{有利事象}=\binom62=15.
+  \]
+  よって条件付き確率は
+  \[
+  \frac{15}{84}=\frac{5}{28}.
+  \]
+  \item 1～12を3で割った余り0,1,2の個数はそれぞれ4個。
+  和が3の倍数となる組数を数えると
+  \[
+  1+96+16+16+36=165
+  \]
+  （内訳：$(4,0,0),(2,1,1),(1,3,0),(1,0,3),(0,2,2)$）。
+  よって
+  \[
+  \frac{165}{495}=\frac13.
+  \]
+\end{enumerate}
+
+\section*{第3問}
+\begin{enumerate}[label=\arabic*.]
+  \item 余弦定理より
+  \[
+  BC^2=6^2+10^2-2\cdot6\cdot10\cos120^\circ
+  =36+100+60=196.
+  \]
+  よって
+  \[
+  BC=14.
+  \]
+  \item 面積
+  \[
+  S=\frac12\cdot6\cdot10\sin120^\circ
+  =30\cdot\frac{\sqrt3}{2}=15\sqrt3.
+  \]
+  \item 半周長を $s$ とすると
+  \[
+  s=\frac{6+10+14}{2}=15.
+  \]
+  内接円半径 $r$ は $S=rs$ より
+  \[
+  r=\frac{S}{s}=\frac{15\sqrt3}{15}=\sqrt3.
+  \]
+  \item 中線の長さ公式
+  \[
+  AM=\frac12\sqrt{2AB^2+2AC^2-BC^2}
+  =\frac12\sqrt{2\cdot6^2+2\cdot10^2-14^2}
+  =\frac12\sqrt{76}=\sqrt{19}.
+  \]
+\end{enumerate}
+
+\section*{第4問}
+\begin{enumerate}[label=\arabic*.]
+  \item データは20個。第10番目と第11番目はいずれも55なので
+  \[
+  \text{中央値}=55.
+  \]
+  \item 下位10個の中央値は第5・6番目（50,50）の平均より
+  \[
+  Q_1=50.
+  \]
+  上位10個の中央値は第15・16番目（65,65）の平均より
+  \[
+  Q_3=65.
+  \]
+  よって
+  \[
+  IQR=Q_3-Q_1=15.
+  \]
+  \item 対称性または計算より
+  \[
+  \bar{x}=\frac{40\cdot1+45\cdot2+50\cdot3+55\cdot4+60\cdot4+65\cdot3+70\cdot2+75\cdot1}{20}
+  =\frac{1150}{20}=57.5.
+  \]
+  \item
+  \[
+  \sum (x-\bar{x})^2
+  =306.25+312.5+168.75+25+25+168.75+312.5+306.25
+  =1625.
+  \]
+  よって
+  \[
+  s^2=\frac{1625}{20}=81.25=\frac{325}{4},
+  \quad
+  s=\sqrt{\frac{325}{4}}=\frac{5\sqrt{13}}{2}.
+  \]
+\end{enumerate}
+
+\end{document}

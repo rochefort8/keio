@@ -1,0 +1,131 @@
+\documentclass[a4paper,12pt]{jsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\section*{第1問（数と式・二次関数）}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  P(x)=-2(x-6)^2+32
+  \]
+  より、最大となるのは
+  \[
+  x=6.
+  \]
+  \item 最大利益は
+  \[
+  32\text{万円}.
+  \]
+  \item
+  \[
+  -2x^2+24x-40\ge0
+  \iff x^2-12x+20\le0
+  \iff (x-2)(x-10)\le0.
+  \]
+  よって
+  \[
+  2\le x\le10.
+  \]
+  \item
+  \[
+  P(3)=-2\cdot9+24\cdot3-40=14,
+  \quad
+  P(7)=-2\cdot49+24\cdot7-40=30.
+  \]
+  したがって増加量は
+  \[
+  30-14=16\text{万円}.
+  \]
+\end{enumerate}
+
+\section*{第2問（場合の数・確率）}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  \binom{9}{3}=84.
+  \]
+  \item 奇数5枚、偶数4枚。和が偶数になるのは（奇奇偶）または（偶偶偶）。
+  \[
+  \binom52\binom41+\binom43=40+4=44.
+  \]
+  よって
+  \[
+  \frac{44}{84}=\frac{11}{21}.
+  \]
+  \item 最大が7なら7を含み、残り2枚は1～6から選ぶ。
+  \[
+  \binom62=15.
+  \]
+  よって
+  \[
+  \frac{15}{84}=\frac{5}{28}.
+  \]
+  \item $1\le a<b<c\le9$ で $a+b>c$ を満たす組を数えると26通り。よって
+  \[
+  \frac{26}{84}=\frac{13}{42}.
+  \]
+\end{enumerate}
+
+\section*{第3問（図形と計量）}
+\begin{enumerate}[label=\arabic*.]
+  \item 余弦定理より
+  \[
+  BC^2=9^2+7^2-2\cdot9\cdot7\cos60^\circ
+  =81+49-63=67.
+  \]
+  よって
+  \[
+  BC=\sqrt{67}.
+  \]
+  \item
+  \[
+  S=\frac12\cdot9\cdot7\sin60^\circ
+  =\frac{63\sqrt3}{4}.
+  \]
+  \item 正弦定理より
+  \[
+  \frac{BC}{\sin60^\circ}=2R
+  \Rightarrow
+  R=\frac{\sqrt{67}}{\sqrt3}=\frac{\sqrt{201}}{3}.
+  \]
+  \item 高さを $h$ とすると
+  \[
+  \frac12\cdot BC\cdot h=S
+  \Rightarrow
+  h=\frac{2S}{BC}=\frac{63\sqrt3}{2\sqrt{67}}.
+  \]
+\end{enumerate}
+
+\section*{第4問（データの分析）}
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  H=50+10\frac{72-62}{10}=60.
+  \]
+  \item
+  \[
+  50+10\frac{x-62}{10}\ge60
+  \iff x\ge72.
+  \]
+  \item
+  \[
+  H(52)=50+\frac{10(52-62)}{10}=40,
+  \quad
+  H(77)=50+\frac{10(77-62)}{10}=65.
+  \]
+  差は
+  \[
+  65-40=25.
+  \]
+  \item
+  \[
+  50+10\frac{x-62}{10}=45
+  \iff x-62=-5
+  \iff x=57.
+  \]
+\end{enumerate}
+
+\end{document}

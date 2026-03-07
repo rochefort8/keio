@@ -1,0 +1,174 @@
+\documentclass[lualatex,ja=standard]{bxjsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0.6em, topsep=0.5em}
+\pagestyle{empty}
+
+\begin{document}
+
+\noindent\textbf{数IA 思考演習（標準） 解答}
+\hrule
+\vspace{0.8em}
+
+\begin{enumerate}
+\item
+\[
+-7\le 2x-5\le 7
+\Rightarrow -2\le 2x\le 12
+\Rightarrow -1\le x\le 6
+\]
+$x$ は整数より
+\[
+x=-1,0,1,2,3,4,5,6
+\]
+
+\item 異なる2実数解の条件は判別式 $D>0$。
+\[
+D=(a+1)^2-4(a-2)=a^2-2a+9=(a-1)^2+8
+\]
+これは常に正なので、すべての実数 $a$ で条件を満たす。
+
+\item
+\begin{enumerate}[label=(\arabic*)]
+\item
+\[
+y=-(x^2-4x)+1=-(x-2)^2+5
+\]
+より頂点は $(2,5)$。
+\item
+\[
+-x^2+4x+1=0
+\Leftrightarrow x^2-4x-1=0
+\]
+\[
+x=\frac{4\pm\sqrt{16+4}}{2}=2\pm\sqrt5
+\]
+よって共有点は
+\[
+(2-\sqrt5,0),\ (2+\sqrt5,0)
+\]
+\end{enumerate}
+
+\item
+\[
+(x+y)^2=x^2+2xy+y^2
+\]
+より
+\[
+25=13+2xy \Rightarrow xy=6
+\]
+したがって $x,y$ は
+\[
+t^2-5t+6=0
+\]
+の2解なので
+\[
+t=2,3
+\]
+ゆえに
+\[
+(x,y)=(2,3),(3,2)
+\]
+
+\item
+\begin{enumerate}[label=(\arabic*)]
+\item 余弦定理より
+\[
+12^2=10^2+10^2-2\cdot10\cdot10\cos A
+\]
+\[
+144=200-200\cos A
+\Rightarrow \cos A=\frac{7}{25}
+\]
+よって
+\[
+\angle A=\cos^{-1}\!\left(\frac{7}{25}\right)
+\]
+\item
+\[
+S=\frac12\cdot10\cdot10\sin A=50\sin A
+\]
+\[
+\sin A=\sqrt{1-\cos^2A}
+=\sqrt{1-\left(\frac{7}{25}\right)^2}
+=\frac{24}{25}
+\]
+より
+\[
+S=50\cdot\frac{24}{25}=48
+\]
+\end{enumerate}
+
+\item $0^\circ<\theta<180^\circ$ で $\tan\theta<0$ より第2象限。
+\[
+\tan\theta=\frac{\sin\theta}{\cos\theta}=-\frac43
+\]
+比より $\sin:\cos=4:-3$、また
+\[
+\sin^2\theta+\cos^2\theta=1
+\]
+から
+\[
+\sin\theta=\frac45,\quad \cos\theta=-\frac35
+\]
+
+\item 全事象は
+\[
+\binom92=36
+\]
+和が偶数になるのは「奇数2枚」または「偶数2枚」。
+奇数は5枚、偶数は4枚なので
+\[
+\binom52+\binom42=10+6=16
+\]
+よって確率は
+\[
+\frac{16}{36}=\frac49
+\]
+
+\item 全体は
+\[
+\binom93=84
+\]
+3色すべて異なるには赤1・白1・黒1の選び方なので
+\[
+\binom41\binom31\binom21=4\cdot3\cdot2=24
+\]
+よって
+\[
+24\ \text{通り}
+\]
+
+\item
+\begin{itemize}
+\item[(ア)] 中央値70点より、20番目と21番目の値の平均が70。よって少なくとも20人が70点以上とは限らない（例：20番目69点、21番目71点）。
+\item[(イ)] 同様に必ずしも成り立たない。
+\item[(ウ)] 平均68点なので、全員が68点未満だと平均も68点未満になる。したがって最高点は68点以上。
+\end{itemize}
+よって必ず正しいのは
+\[
+\text{(ウ)}
+\]
+
+\item 定義域より
+\[
+x+5\ge0,\ x-1\ge0 \Rightarrow x\ge1
+\]
+両辺を2乗して
+\[
+x+5=(x-1)^2=x^2-2x+1
+\]
+\[
+x^2-3x-4=0
+\Rightarrow (x-4)(x+1)=0
+\]
+\[
+x=4,-1
+\]
+定義域 $x\ge1$ より
+\[
+x=4
+\]
+\end{enumerate}
+
+\end{document}

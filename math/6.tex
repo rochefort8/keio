@@ -1,0 +1,208 @@
+\documentclass[a4paper,12pt]{ltjsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+{\LARGE 数I・A 共通テスト風（図形のみ・大問4題）}
+\end{center}
+
+\vspace{1em}
+
+\section*{問題}
+
+\section*{第1問（三角比・図形と計量）}
+三角形 \(ABC\) において、
+\[
+AB=7,\quad AC=9,\quad \angle A=60^\circ
+\]
+とする。
+\begin{enumerate}[label=\arabic*.]
+  \item 辺 \(BC\) の長さを求めよ。
+  \item 三角形 \(ABC\) の面積を求めよ。
+  \item 三角形 \(ABC\) の外接円の半径 \(R\) を求めよ。
+  \item 辺 \(BC\) を底辺としたときの高さを求めよ。
+\end{enumerate}
+
+\section*{第2問（円）}
+半径 \(6\) の円 \(O\) において、弦 \(AB\) の長さは \(6\sqrt{3}\) である。
+\begin{enumerate}[label=\arabic*.]
+  \item 中心角 \(\angle AOB\) の大きさ（小さい方）を求めよ。
+  \item 弧 \(AB\)（小さい方）の長さを求めよ。
+  \item 扇形 \(AOB\)（小さい方）の面積を求めよ。
+  \item 弦 \(AB\) と弧 \(AB\) で囲まれる部分（弓形）の面積を求めよ。
+\end{enumerate}
+
+\section*{第3問（平面図形）}
+平行四辺形 \(ABCD\) において、
+\[
+AB=8,\quad AD=5,\quad \angle DAB=45^\circ
+\]
+とする。対角線の交点を \(O\) とする。
+\begin{enumerate}[label=\arabic*.]
+  \item 平行四辺形 \(ABCD\) の面積を求めよ。
+  \item 対角線 \(BD\) の長さを求めよ。
+  \item 三角形 \(AOD\) の面積を求めよ。
+  \item 点 \(A\) から直線 \(BD\) への距離を求めよ。
+\end{enumerate}
+
+\section*{第4問（空間図形）}
+底面が一辺 \(6\) の正方形、高さ \(8\) の直方体 \(ABCD\text{-}EFGH\) を考える。  
+（\(ABCD\) が下底面、\(EFGH\) が上底面で、\(AE\perp\) 底面）
+\begin{enumerate}[label=\arabic*.]
+  \item 空間対角線 \(AG\) の長さを求めよ。
+  \item 線分 \(AG\) と底面 \(ABCD\) がなす角 \(\theta\) について、\(\tan\theta\) を求めよ。
+  \item 三角形 \(AEG\) の面積を求めよ。
+  \item 点 \(A\) から平面 \(BDG\) までの距離を求めよ。
+\end{enumerate}
+
+\newpage
+\section*{解答}
+
+\section*{第1問}
+\begin{enumerate}[label=\arabic*.]
+  \item 余弦定理より
+  \[
+  BC^2=7^2+9^2-2\cdot7\cdot9\cos60^\circ=49+81-63=67
+  \]
+  よって
+  \[
+  BC=\sqrt{67}.
+  \]
+  \item 面積
+  \[
+  S=\frac12\cdot7\cdot9\sin60^\circ
+  =\frac{63}{2}\cdot\frac{\sqrt3}{2}
+  =\frac{63\sqrt3}{4}.
+  \]
+  \item 正弦定理 \( \dfrac{BC}{\sin A}=2R \) より
+  \[
+  R=\frac{BC}{2\sin60^\circ}
+  =\frac{\sqrt{67}}{\sqrt3}
+  =\frac{\sqrt{201}}{3}.
+  \]
+  \item 高さを \(h\) とすると
+  \[
+  \frac12\cdot BC\cdot h=S
+  \]
+  より
+  \[
+  h=\frac{2S}{BC}
+  =\frac{2\cdot(63\sqrt3/4)}{\sqrt{67}}
+  =\frac{63\sqrt3}{2\sqrt{67}}.
+  \]
+\end{enumerate}
+
+\section*{第2問}
+\begin{enumerate}[label=\arabic*.]
+  \item 弦の長さの公式 \(AB=2R\sin\frac{\theta}{2}\)（\(\theta=\angle AOB\)）より
+  \[
+  6\sqrt3=12\sin\frac{\theta}{2}
+  \Rightarrow \sin\frac{\theta}{2}=\frac{\sqrt3}{2}.
+  \]
+  小さい方の角なので
+  \[
+  \theta=120^\circ.
+  \]
+  \item 弧の長さ
+  \[
+  \frac{120}{360}\cdot2\pi\cdot6=4\pi.
+  \]
+  \item 扇形の面積
+  \[
+  \frac{120}{360}\cdot\pi\cdot6^2=12\pi.
+  \]
+  \item 弓形の面積
+  \[
+  =\text{扇形 }AOB-\triangle AOB.
+  \]
+  \[
+  [\triangle AOB]=\frac12\cdot6\cdot6\sin120^\circ
+  =18\cdot\frac{\sqrt3}{2}=9\sqrt3.
+  \]
+  よって
+  \[
+  12\pi-9\sqrt3.
+  \]
+\end{enumerate}
+
+\section*{第3問}
+\begin{enumerate}[label=\arabic*.]
+  \item 面積
+  \[
+  S=AB\cdot AD\sin45^\circ
+  =8\cdot5\cdot\frac{\sqrt2}{2}
+  =20\sqrt2.
+  \]
+  \item 三角形 \(ABD\) に余弦定理を用いて
+  \[
+  BD^2=8^2+5^2-2\cdot8\cdot5\cos45^\circ
+  =89-40\sqrt2.
+  \]
+  よって
+  \[
+  BD=\sqrt{89-40\sqrt2}.
+  \]
+  \item 対角線は平行四辺形を面積が等しい4つの三角形に分けるので
+  \[
+  [\triangle AOD]=\frac14\cdot20\sqrt2=5\sqrt2.
+  \]
+  \item 三角形 \(ABD\) の面積は
+  \[
+  [\triangle ABD]=\frac12\cdot20\sqrt2=10\sqrt2.
+  \]
+  点 \(A\) から直線 \(BD\) への距離を \(d\) とすると
+  \[
+  10\sqrt2=\frac12\cdot BD\cdot d
+  \Rightarrow d=\frac{20\sqrt2}{\sqrt{89-40\sqrt2}}.
+  \]
+\end{enumerate}
+
+\section*{第4問}
+座標を
+\[
+A(0,0,0),\ B(6,0,0),\ D(0,6,0),\ E(0,0,8),\ G(6,6,8)
+\]
+とおく。
+\begin{enumerate}[label=\arabic*.]
+  \item
+  \[
+  AG=\sqrt{6^2+6^2+8^2}=\sqrt{136}=2\sqrt{34}.
+  \]
+  \item \(AG\) の底面への正射影は \(AC\) で
+  \[
+  AC=\sqrt{6^2+6^2}=6\sqrt2.
+  \]
+  よって
+  \[
+  \tan\theta=\frac{8}{6\sqrt2}=\frac{2\sqrt2}{3}.
+  \]
+  \item
+  \[
+  [\triangle AEG]
+  =\frac12\cdot AE\cdot(\text{点 }G\text{ から直線 }AE\text{ への距離})
+  =\frac12\cdot8\cdot6\sqrt2
+  =24\sqrt2.
+  \]
+  \item 平面 \(BDG\) の法線ベクトルは
+  \[
+  \overrightarrow{BD}=(-6,6,0),\quad \overrightarrow{BG}=(0,6,8)
+  \]
+  から
+  \[
+  \overrightarrow{n}=\overrightarrow{BD}\times\overrightarrow{BG}=(4,4,-3)
+  \]
+  （比例ベクトル）なので、平面方程式は
+  \[
+  4x+4y-3z-24=0.
+  \]
+  よって点 \(A(0,0,0)\) から平面 \(BDG\) までの距離は
+  \[
+  \frac{|4\cdot0+4\cdot0-3\cdot0-24|}{\sqrt{4^2+4^2+(-3)^2}}
+  =\frac{24}{\sqrt{41}}.
+  \]
+\end{enumerate}
+
+\end{document}

@@ -1,0 +1,192 @@
+\documentclass[lualatex,ja=standard]{bxjsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+\setlist[enumerate]{itemsep=0.6em, topsep=0.5em}
+\pagestyle{empty}
+
+\begin{document}
+
+\noindent\textbf{数IA 共通テスト演習（図形・確率・データ分析） 解答}
+\hrule
+\vspace{0.8em}
+
+\begin{enumerate}
+\item
+\begin{enumerate}[label=(\arabic*)]
+\item 余弦定理より
+\[
+BC^2=AB^2+AC^2-2\cdot AB\cdot AC\cos A
+\]
+\[
+=6^2+8^2-2\cdot6\cdot8\cos120^\circ
+=36+64-96\left(-\frac12\right)=148
+\]
+\[
+BC=2\sqrt{37}
+\]
+\item 面積公式より
+\[
+S=\frac12\cdot AB\cdot AC\sin A
+=\frac12\cdot6\cdot8\sin120^\circ
+=24\cdot\frac{\sqrt3}{2}
+=12\sqrt3
+\]
+\end{enumerate}
+
+\item 余弦定理より
+\[
+AC^2=AB^2+BC^2-2\cdot AB\cdot BC\cos B
+\]
+\[
+8^2=5^2+7^2-2\cdot5\cdot7\cos B
+\]
+\[
+64=74-70\cos B
+\Rightarrow \cos B=\frac{1}{7}
+\]
+\[
+\cos B>0
+\]
+より、$\angle B$ は鋭角。
+
+\item 全事象は
+\[
+\binom92=36
+\]
+和が6の倍数になる組は
+\[
+(1,5),(1,11\text{不可}),(2,4),(2,10\text{不可}),(3,9),(4,8),(5,7)
+\]
+を1〜9内で整理すると
+\[
+(1,5),(2,4),(3,9),(4,8),(5,7)
+\]
+の5通り。
+よって確率は
+\[
+\frac{5}{36}
+\]
+
+\item 全事象は
+\[
+\binom93=84
+\]
+「ちょうど2色」は補集合を用いる。
+\[
+\text{(1色のみ)}+\text{(3色すべて)}
+\]
+を全体から引く。
+
+1色のみ:
+\[
+\binom43+\binom33+\binom23=4+1+0=5
+\]
+
+3色すべて:
+\[
+\binom41\binom31\binom21=24
+\]
+
+したがって
+\[
+84-(5+24)=55
+\]
+よって確率は
+\[
+\frac{55}{84}
+\]
+
+\item 条件「和が9以上」の場合の標本空間は
+\[
+(3,6),(4,5),(5,4),(6,3),
+\]
+\[
+(4,6),(5,5),(6,4),
+\]
+\[
+(5,6),(6,5),
+\]
+\[
+(6,6)
+\]
+の10通り。
+
+このうち積が奇数なのは両方奇数のときのみで
+\[
+(5,5)
+\]
+の1通り。
+したがって積が偶数は9通り。
+
+よって条件付き確率は
+\[
+\frac{9}{10}
+\]
+
+\item
+\begin{itemize}
+\item[(ア)] 中央値66点より、20番目と21番目の平均が66。必ずしも66点以上が20人以上とは限らない。
+\item[(イ)] 必ずしも成り立たない。
+\item[(ウ)] 平均64点より、最高点は64点以上であることが必要。
+\end{itemize}
+よって必ず正しいのは
+\[
+\text{(ウ)}
+\]
+
+\item データ（昇順）
+\[
+4,\ 5,\ 6,\ 7,\ 7,\ 8,\ 9,\ 10,\ 12,\ 12
+\]
+
+中央値（$Q_2$）は5番目と6番目の平均：
+\[
+Q_2=\frac{7+8}{2}=7.5
+\]
+
+下位5個
+\[
+4,\ 5,\ 6,\ 7,\ 7
+\]
+の中央値より
+\[
+Q_1=6
+\]
+
+上位5個
+\[
+8,\ 9,\ 10,\ 12,\ 12
+\]
+の中央値より
+\[
+Q_3=10
+\]
+
+四分位範囲は
+\[
+Q_3-Q_1=10-6=4
+\]
+
+\item 偏差値の公式
+\[
+\text{偏差値}=50+10\frac{x-\mu}{\sigma}
+\]
+を用いる（$\mu=58,\ \sigma=12$）。
+
+得点74点の偏差値:
+\[
+50+10\cdot\frac{74-58}{12}
+=50+\frac{40}{3}
+=\frac{190}{3}\approx63.3
+\]
+
+偏差値65に相当する得点を $x$ とすると
+\[
+65=50+10\frac{x-58}{12}
+\Rightarrow 15=10\frac{x-58}{12}
+\Rightarrow x-58=18
+\Rightarrow x=76
+\]
+\end{enumerate}
+
+\end{document}

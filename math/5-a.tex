@@ -1,0 +1,128 @@
+\documentclass[a4paper,12pt]{ltjsarticle}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{enumitem}
+
+\begin{document}
+
+\begin{center}
+{\LARGE 数I・A 共通テスト風 解答（5-a）}
+\end{center}
+
+\vspace{1em}
+
+\section*{第1問（数と式・二次関数）}
+\[
+f(x)=x^2-6x+a=(x-3)^2+(a-9)
+\]
+\begin{enumerate}[label=\arabic*.]
+  \item 最小値は \(\,a-9\)（\(x=3\) のとき）。
+  \item 判別式より
+  \[
+  D=36-4a>0 \iff a<9.
+  \]
+  \item \(\alpha<1<\beta\) は \(f(1)<0\) と同値。
+  \[
+  f(1)=1-6+a=a-5<0 \iff a<5.
+  \]
+  また \(\alpha,\beta\) が実数であるには \(a\le 9\) が必要だが、\(a<5\) なら自動的に満たす。  
+  よって \(\,a<5\)。
+  \item \(a=5\) のとき
+  \[
+  x^2-6x+5\le0
+  \iff (x-1)(x-5)\le0
+  \iff 1\le x\le5.
+  \]
+\end{enumerate}
+
+\section*{第2問（場合の数・確率）}
+全事象は
+\[
+{8 \choose 3}=56
+\]
+通り。
+\begin{enumerate}[label=\arabic*.]
+  \item 偶数4枚・奇数4枚より、和が偶数になるのは  
+  （偶偶偶）または（偶奇奇）。
+  \[
+  {4 \choose 3}+{4 \choose 1}{4 \choose 2}=4+24=28
+  \]
+  よって確率は
+  \[
+  \frac{28}{56}=\frac12.
+  \]
+  \item 最大が6とは、\(\{1,2,3,4,5\}\)から2枚選び6を加える場合：
+  \[
+  {5 \choose 2}=10
+  \]
+  よって
+  \[
+  \frac{10}{56}=\frac{5}{28}.
+  \]
+  \item 3の倍数を含まない場合を補集合で数える。  
+  3の倍数は \(\{3,6\}\) の2枚、非3の倍数は6枚。
+  \[
+  P(\text{積が3の倍数})=1-\frac{{6 \choose 3}}{{8 \choose 3}}
+  =1-\frac{20}{56}
+  =\frac{36}{56}
+  =\frac{9}{14}.
+  \]
+  \item 条件 \(a+b>c\) を満たす組（\(1\le a<b<c\le 8\)）を数えると18通り。  
+  よって
+  \[
+  \frac{18}{56}=\frac{9}{28}.
+  \]
+\end{enumerate}
+
+\section*{第3問（図形と計量）}
+\[
+AB=6,\ AC=8,\ \angle A=60^\circ
+\]
+\begin{enumerate}[label=\arabic*.]
+  \item 面積
+  \[
+  S=\frac12\cdot6\cdot8\cdot\sin60^\circ
+  =24\cdot\frac{\sqrt3}{2}
+  =12\sqrt3.
+  \]
+  \item 余弦定理で
+  \[
+  BC^2=6^2+8^2-2\cdot6\cdot8\cos60^\circ=52
+  \]
+  より \(BC=2\sqrt{13}\)。  
+  正弦定理 \( \dfrac{a}{\sin A}=2R \)（\(a=BC\)）から
+  \[
+  R=\frac{a}{2\sin A}
+  =\frac{2\sqrt{13}}{2\cdot(\sqrt3/2)}
+  =\frac{2\sqrt{13}}{\sqrt3}
+  =\frac{2\sqrt{39}}{3}.
+  \]
+  \item \(BC\) を底辺、高さを \(h\) とすると
+  \[
+  12\sqrt3=\frac12\cdot(2\sqrt{13})\cdot h
+  \]
+  よって
+  \[
+  h=\frac{12\sqrt3}{\sqrt{13}}
+  =\frac{12\sqrt{39}}{13}.
+  \]
+\end{enumerate}
+
+\section*{第4問（データの分析）}
+\[
+H=50+10\frac{x-64}{12}
+\]
+\begin{enumerate}[label=\arabic*.]
+  \item \(x=76\) のとき
+  \[
+  H=50+10\cdot\frac{12}{12}=60.
+  \]
+  \item
+  \[
+  50+10\frac{x-64}{12}\ge60
+  \iff \frac{x-64}{12}\ge1
+  \iff x\ge76.
+  \]
+\end{enumerate}
+
+\end{document}
